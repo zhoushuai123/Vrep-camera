@@ -1,0 +1,107 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1b85d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1b85d.dir/build.make CMakeFiles/cmTC_1b85d.dir/build
+make[1]: Entering directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b85d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1b85d.dir/CheckSymbolExists.c.o   -c /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1b85d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b85d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_1b85d.dir/CheckSymbolExists.c.o  -o cmTC_1b85d 
+CMakeFiles/cmTC_1b85d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1b85d.dir/build.make:97: recipe for target 'cmTC_1b85d' failed
+make[1]: *** [cmTC_1b85d] Error 1
+make[1]: Leaving directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1b85d/fast' failed
+make: *** [cmTC_1b85d/fast] Error 2
+
+File /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d49bb/fast"
+make[1]: Entering directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_d49bb.dir/build.make CMakeFiles/cmTC_d49bb.dir/build
+make[2]: Entering directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d49bb.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d49bb.dir/CheckSymbolExists.c.o   -c /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d49bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d49bb.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d49bb.dir/CheckSymbolExists.c.o  -o cmTC_d49bb 
+CMakeFiles/cmTC_d49bb.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d49bb.dir/build.make:97: recipe for target 'cmTC_d49bb' failed
+make[2]: *** [cmTC_d49bb] Error 1
+make[2]: Leaving directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d49bb/fast' failed
+make[1]: *** [cmTC_d49bb/fast] Error 2
+make[1]: Leaving directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+
+File /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a235b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a235b.dir/build.make CMakeFiles/cmTC_a235b.dir/build
+make[1]: Entering directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a235b.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a235b.dir/CheckSymbolExists.c.o   -c /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a235b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a235b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a235b.dir/CheckSymbolExists.c.o  -o cmTC_a235b 
+CMakeFiles/cmTC_a235b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a235b.dir/build.make:97: recipe for target 'cmTC_a235b' failed
+make[1]: *** [cmTC_a235b] Error 1
+make[1]: Leaving directory '/home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a235b/fast' failed
+make: *** [cmTC_a235b/fast] Error 2
+
+File /home/zmc/Downloads/V-REP_PRO_EDU_V3_5_0_Linux/Vrep-camera/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

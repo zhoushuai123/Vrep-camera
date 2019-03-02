@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimdata.lib.a  CMakeFiles/simdata.lib.dir/src/extApi.c.o CMakeFiles/simdata.lib.dir/src/extApiPlatform.c.o
+/usr/bin/ranlib libsimdata.lib.a

@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.5)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED OFF)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+add_definitions(-DNON_MATLAB_PARSING)
+add_definitions(-DMAX_EXT_API_CONNECTIONS=255)
+
+#find_package(Eigen3)
+find_package(Threads REQUIRED)
+find_package( OpenCV REQUIRED )
+find_package(Boost REQUIRED)
+
+include_directories(include)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+#include_directories (${PCL_INCLUDE_DIRS})
+#link_directories    (${PCL_LIBRARY_DIRS})
+#add_definitions     (${PCL_DEFINITIONS})
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
+
+add_library(simdata.lib src/extApi.c src/extApiPlatform.c src/manyImshow.h)
+add_executable(VrepCamera.bin src/connect.cpp)
+
+target_link_libraries(VrepCamera.bin Threads::Threads)
+target_link_libraries(VrepCamera.bin simdata.lib)
+target_link_libraries(VrepCamera.bin ${OpenCV_LIBS} ${PCL_LIBRARIES} ${Glue} ${VTK_LIBRARIES} ${Boost_LIBRARIES})
